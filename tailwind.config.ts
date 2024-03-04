@@ -13,6 +13,9 @@ const config = {
       },
     },
     extend: {
+      spacing: {
+        300: '75rem',
+      },
       colors: {
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
@@ -47,6 +50,8 @@ const config = {
           DEFAULT: 'hsl(var(--card))',
           foreground: 'hsl(var(--card-foreground))',
         },
+        purple: '#5946BC',
+        gray: '#4D5761',
       },
       borderRadius: {
         lg: 'var(--radius)',
