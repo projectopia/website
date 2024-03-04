@@ -14,6 +14,7 @@ const config = {
     },
     extend: {
       spacing: {
+        25: '6.25rem',
         300: '75rem',
       },
       colors: {

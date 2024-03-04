@@ -1,4 +1,4 @@
-import { NavigationBar } from '@/components/navigation';
+import { Footer, NavigationBar } from '@/components/navigation';
 import next from 'next';
 
 export default function RootLayout({
@@ -10,6 +10,7 @@ export default function RootLayout({
     <div className="h-full">
       <NavigationBar />
       <main className="flex justify-center px-4">{children}</main>
+      <Footer />
     </div>
   );
 }

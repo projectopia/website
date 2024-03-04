@@ -80,3 +80,9 @@ body,
     @apply bg-background text-foreground;
   }
 }
+
+@layer components {
+  .footer-socials:has(a:hover) a:not(:hover) {
+    @apply scale-90 opacity-30;
+  }
+}
