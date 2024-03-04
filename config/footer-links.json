@@ -1,0 +1,75 @@
+[
+  {
+    "label": "Resources",
+    "links": [
+      {
+        "title": "Docs",
+        "href": "/docs"
+      },
+      {
+        "title": "Project's Booklet",
+        "href": "/docs"
+      },
+      {
+        "title": "Guideline",
+        "href": "/guideline"
+      },
+      {
+        "title": "Generate a Project",
+        "href": "/generator"
+      }
+    ]
+  },
+  {
+    "label": "Build",
+    "links": [
+      {
+        "title": "Docs",
+        "href": "/docs"
+      },
+      {
+        "title": "Changelog",
+        "href": "/docs"
+      }
+    ]
+  },
+  {
+    "label": "Community",
+    "links": [
+      {
+        "title": "Contribute Scaffold",
+        "href": "/contribute"
+      },
+      {
+        "title": "Discussion",
+        "href": "/docs"
+      },
+      {
+        "title": "Request Changes",
+        "href": "/docs"
+      },
+      {
+        "title": "Contact Us",
+        "href": "/contact"
+      }
+    ]
+  },
+  {
+    "label": "Learn",
+    "links": [
+      {
+        "title": "Blog",
+        "href": "/blog"
+      },
+      {
+        "title": "Tutorial",
+        "href": "/docs"
+      },
+      {
+        "title": "Linux's Tricks",
+        "href": "https://ubunchuu-truong-us.github.io/",
+        "newTab": true
+      }
+    ]
+  }
+]
