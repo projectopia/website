@@ -2,8 +2,8 @@ name: Test
 on: pull_request
 
 jobs:
-  build-and-serve:
-    name: Test
+  build:
+    name: CI
     runs-on: ubuntu-22.04
     steps:
       - name: Checkout Code
