@@ -82,6 +82,14 @@ body,
 }
 
 @layer components {
+  html:not([data-navbar-scroll='0']) .navbar {
+    @apply bg-white drop-shadow;
+  }
+
+  html:not([data-navbar-scroll='0']) .navbar > div {
+    @apply h-15;
+  }
+
   .footer-socials:has(a:hover) a:not(:hover) {
     @apply scale-90 opacity-30;
   }

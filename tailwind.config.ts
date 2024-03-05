@@ -14,6 +14,7 @@ const config = {
     },
     extend: {
       spacing: {
+        15: '3.75rem',
         25: '6.25rem',
         300: '75rem',
       },
@@ -53,6 +54,7 @@ const config = {
         },
         purple: '#5946BC',
         gray: '#4D5761',
+        'primary-bg': '#F3F4F6',
       },
       borderRadius: {
         lg: 'var(--radius)',
