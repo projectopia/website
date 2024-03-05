@@ -37,7 +37,7 @@ jobs:
 
       - name: Verify Build Output
         run: |
-          if [ -d "build" ]; then
+          if [ -d ".next" ]; then
             echo "Build successful"
           else
             echo "Build failed"
@@ -48,7 +48,7 @@ jobs:
         if: github.event_name == 'pull_request'
         uses: actions/github-script@v7
         with:
-          github-token: ${{ secrets.TOKEN_GITHUB }}
+          github-token: ${{ secrets.PERSONAL_TOKEN }}
           script: |
             const installTime = process.env.installTime;
             const buildTime = process.env.buildTime;
