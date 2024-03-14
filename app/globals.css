@@ -72,6 +72,15 @@ body,
   }
 }
 
+/* Text Selection */
+::-moz-selection {
+  @apply text-white bg-purple;
+}
+
+::selection {
+  @apply text-white bg-purple;
+}
+
 @layer base {
   * {
     @apply border-border;
@@ -83,7 +92,7 @@ body,
 
 @layer components {
   html:not([data-navbar-scroll='0']) .navbar {
-    @apply bg-white drop-shadow;
+    @apply bg-white bg-opacity-95 backdrop-blur drop-shadow;
   }
 
   html:not([data-navbar-scroll='0']) .navbar > div {

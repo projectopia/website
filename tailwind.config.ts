@@ -16,6 +16,8 @@ const config = {
       spacing: {
         15: '3.75rem',
         25: '6.25rem',
+        55: '13.75rem',
+        160: '40rem',
         300: '75rem',
       },
       colors: {
