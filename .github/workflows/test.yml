@@ -43,27 +43,3 @@ jobs:
             echo "Build failed"
             exit 1
           fi
-
-      - name: Comment on Pull Request
-        if: github.event_name == 'pull_request'
-        uses: actions/github-script@v7
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          script: |
-            const installTime = process.env.installTime;
-            const buildTime = process.env.buildTime;
-            const table = `
-              | Step                 | Time (seconds) |
-              |----------------------|----------------|
-              | Install Dependencies | ${installTime} |
-              | Build Website        | ${buildTime}   |
-            `;
-            const header = `## Performance Report\n- Run number: ${process.env.GITHUB_RUN_NUMBER} \n - Run ID: ${process.env.GITHUB_RUN_ID} \n - Run URL: ${process.env.GITHUB_SERVER_URL}/${process.env.GITHUB_REPOSITORY}/actions/runs/${process.env.GITHUB_RUN_ID}\n - ✅ Test server functionality passed with the following times for each step:\n`;
-            const commentBody = `${header}\n\n${table}`;
-            github.rest.issues.createComment({
-              issue_number: context.issue.number,
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              body: commentBody
-            });
-      
