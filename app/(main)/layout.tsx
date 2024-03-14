@@ -11,7 +11,7 @@ export default function RootLayout({
     <div className="h-full">
       <ScrollHandler />
       <NavigationBar />
-      <main className="flex justify-center px-4">{children}</main>
+      <main>{children}</main>
       <Footer />
     </div>
   );

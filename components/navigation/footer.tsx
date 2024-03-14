@@ -60,7 +60,7 @@ export default function Footer() {
               <span className="animate-ping absolute inline-flex h-4 w-4 rounded-full bg-green-300 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-3 w-3 bg-green-400"></span>
             </div>
-            <p className="text-sm leading-[30px] font-medium">v1.1 - Fully Operational</p>
+            <p className="text-sm leading-[30px] font-medium">v0.1 - Mercury</p>
           </div>
           <h5 aria-label="footer-copyright" className="justify-self-end text-sm leading-[30px] text-gray">
             © 2024 Projectopia. All rights reserved.

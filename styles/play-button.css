@@ -1,0 +1,51 @@
+.circle {
+  stroke: hsl(var(--purple-color));
+  stroke-dasharray: 650;
+  stroke-dashoffset: 650;
+  transition: all 0.5s ease-in-out;
+  opacity: 0.3;
+}
+
+.play-button {
+  /*border: 1px solid red;*/
+  display: inline-block;
+  transition: all 0.5s ease;
+}
+
+.play-button .triangle {
+  transition: all 0.7s ease-in-out;
+  stroke-dasharray: 240;
+  stroke-dashoffset: 480;
+  stroke: hsl(var(--black-color));
+  transform: translateY(0);
+}
+
+.play-button:hover .triangle {
+  stroke-dashoffset: 0;
+  opacity: 1;
+  stroke: hsl(var(--purple-color));
+  animation: nudge 0.7s ease-in-out;
+}
+
+.play-button:hover .circle {
+  stroke-dashoffset: 0;
+  opacity: 1;
+}
+
+@keyframes nudge {
+  0% {
+    transform: translateX(0);
+  }
+  30% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  70% {
+    transform: translateX(-2px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
