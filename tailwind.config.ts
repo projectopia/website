@@ -16,7 +16,9 @@ const config = {
       spacing: {
         15: '3.75rem',
         25: '6.25rem',
+        30: '7.5rem',
         55: '13.75rem',
+        135: '33.75rem',
         160: '40rem',
         300: '75rem',
       },
@@ -54,9 +56,10 @@ const config = {
           DEFAULT: 'hsl(var(--card))',
           foreground: 'hsl(var(--card-foreground))',
         },
-        purple: '#5946BC',
-        gray: '#4D5761',
-        'primary-bg': '#F3F4F6',
+        purple: 'hsl(var(--purple-color))',
+        gray: 'hsl(var(--gray-color))',
+        'primary-bg': 'hsl(var(--primary-background))',
+        'secondary-bg': 'hsl(var(--secondary-background))',
       },
       borderRadius: {
         lg: 'var(--radius)',

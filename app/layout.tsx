@@ -8,6 +8,9 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata: Metadata = {
   title: 'Projectopia',
   description: `Input your specifications, and we'll handle the rest, automatically generating structure and "Auto DevOps"`,
+  icons: {
+    icon: '/images/projectopia-logo.png',
+  },
 };
 
 export default function RootLayout({

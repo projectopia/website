@@ -1,3 +1,5 @@
+@import '../styles/index.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -39,6 +41,14 @@ body,
     --ring: 222.2 84% 4.9%;
 
     --radius: 0.5rem;
+
+    --white-color: 0 0%, 100%;
+    --black-color: 0 0% 0%;
+    --purple-color: 250 47% 51%;
+    --gray-color: 210 11% 34%;
+
+    --primary-background: 220 14% 96%;
+    --secondary-background: 210 10% 16%;
   }
 
   .dark {
