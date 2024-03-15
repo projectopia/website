@@ -20,19 +20,21 @@ export default function HeroSection() {
             minimizes workload, maximizes output, and propels developers to new heights of efficiency and success.
           </p>
         </div>
-        <Link href={'/generator'} className="flex flex-col items-center mt-10">
-          <BlobButton className="px-4 py-3 text-base font-semibold flex gap-2 items-center drop-shadow-md group">
-            Get Started
-            <div className="relative">
-              <Image src={planetIcon} alt="Planet" className="group-hover:opacity-0 transition duration-700" />
-              <Image
-                src={planetWhite}
-                alt="Planet"
-                className="absolute left-0 top-0 opacity-0 group-hover:opacity-100 transition duration-700"
-              />
-            </div>
-          </BlobButton>
-        </Link>
+        <div className="flex flex-col items-center mt-10">
+          <Link href={'/generator'}>
+            <BlobButton className="px-4 py-3 text-base font-semibold flex gap-2 items-center drop-shadow-md group">
+              Get Started
+              <div className="relative">
+                <Image src={planetIcon} alt="Planet" className="group-hover:opacity-0 transition duration-700" />
+                <Image
+                  src={planetWhite}
+                  alt="Planet"
+                  className="absolute left-0 top-0 opacity-0 group-hover:opacity-100 transition duration-700"
+                />
+              </div>
+            </BlobButton>
+          </Link>
+        </div>
         <div className="relative mt-24 flex justify-center">
           <Image src={heroImage} alt="Penguins" className="w-135 z-10" priority />
           <div className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-top-1/2 z-10">
