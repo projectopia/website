@@ -1,9 +1,8 @@
 import Link from 'next/link';
-import Image from 'next/image';
 
-import Logo from '@/components/logo';
-import { chevronRightIcon } from '@/public/icons';
 import { cn } from '@/lib/utils';
+import Logo from '@/components/logo';
+import { ChevronRight } from '@/components/icons';
 
 export default function NavigationBar() {
   return (
@@ -29,11 +28,9 @@ export default function NavigationBar() {
               )}
             >
               <p className="z-10 pr-4 font-semibold transition-[padding] group-hover:px-2 duration-300">Sign In</p>
-              <Image
-                className="z-10 right-4 group-hover:-right-2 transition-[right] duration-300 absolute"
-                src={chevronRightIcon}
-                alt="chevron-right"
-              />
+              <div className="z-10 right-4 group-hover:-right-2 transition-[right] duration-300 absolute">
+                <ChevronRight />
+              </div>
             </button>
           </li>
         </ul>

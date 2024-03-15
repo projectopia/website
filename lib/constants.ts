@@ -1,20 +1,20 @@
-import { facebookIcon, githubIcon, linkedinIcon, mailsIcon } from '@/public/icons';
+import { Facebook, Github, Linkedin, Mails } from '@/components/icons';
 
 export const footerSocials = [
   {
-    iconSrc: githubIcon,
     href: 'https://github.com/projectopia',
+    Icon: Github,
   },
   {
-    iconSrc: facebookIcon,
     href: 'https://github.com/projectopia',
+    Icon: Facebook,
   },
   {
-    iconSrc: linkedinIcon,
     href: 'https://github.com/projectopia',
+    Icon: Linkedin,
   },
   {
-    iconSrc: mailsIcon,
     href: 'mailto:nhannguyen8338@gmail.com',
+    Icon: Mails,
   },
 ];

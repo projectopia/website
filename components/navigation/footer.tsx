@@ -37,13 +37,9 @@ export default function Footer() {
         </section>
         <section aria-label="footer-metadata" className="grid grid-cols-3 mt-25 w-full items-center">
           <div aria-label="footer-socials" className="flex gap-8 footer-socials">
-            {footerSocials.map((item, idx) => (
-              <a
-                key={idx}
-                href={item.href}
-                className="opacity-50 hover:opacity-80 hover:scale-105 hover:px-2 transition-all"
-              >
-                <Image src={item.iconSrc} alt="Logo" width={24} height={24} />
+            {footerSocials.map(({ href, Icon }, idx) => (
+              <a key={idx} href={href} className="hover:scale-105 hover:px-2 transition-all group">
+                <Icon size={24} className="stroke-gray group-hover:stroke-purple" />
               </a>
             ))}
           </div>
