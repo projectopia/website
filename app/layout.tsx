@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: 'Projectopia',
   description: `Input your specifications, and we'll handle the rest, automatically generating structure and "Auto DevOps"`,
   icons: {
-    icon: '/images/projectopia-logo.png',
+    icon: '/projectopia-logo.png',
   },
 };
 

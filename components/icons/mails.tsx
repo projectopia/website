@@ -12,7 +12,7 @@ export default function Mails({ size = 24, className = 'black', weight = 2 }: IM
       xmlns="http://www.w3.org/2000/svg"
       width={size}
       height={size}
-      viewBox={`0 0 ${size} ${size}`}
+      viewBox="0 0 24 24"
       fill="none"
       className={cn('mails-icon stroke-black', className)}
       strokeWidth={weight}

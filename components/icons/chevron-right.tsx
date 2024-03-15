@@ -11,7 +11,7 @@ export default function ChevronRight({ size = 6, className = '' }: IChevronRight
       className="chevron-right-icon"
       width={size}
       height={(size / 6) * 11}
-      viewBox={`0 0 ${size} ${(size / 6) * 11}`}
+      viewBox="0 0 6 11"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
