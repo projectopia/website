@@ -1,9 +1,10 @@
 'use client';
 
 import { cn } from '@/lib/utils';
+import ReactParallaxTilt from 'react-parallax-tilt';
 
 export const FeatureCard = ({ children }: { children: React.ReactNode }) => {
-  return <div className="relative w-95 h-72 group">{children}</div>;
+  return <div className="relative w-95 h-72 group max-w-full">{children}</div>;
 };
 
 export const FeatureCardCover = ({ children }: { children: React.ReactNode }) => {
@@ -24,7 +25,10 @@ export const FeatureCardTitle = ({ children }: { children: string }) => {
 
 export const FeatureCardHover = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div
+    <ReactParallaxTilt
+      tiltMaxAngleX={8}
+      tiltMaxAngleY={8}
+      scale={1.02}
       className={cn(
         'absolute inset-0 opacity-0 group-hover:opacity-100 hover:scale-105 hover:opacity-100 rounded-md bg-purple transition-all duration-300',
         'flex flex-col justify-end gap-3 px-10 pb-[50px]',
@@ -32,7 +36,7 @@ export const FeatureCardHover = ({ children }: { children: React.ReactNode }) =>
       )}
     >
       {children}
-    </div>
+    </ReactParallaxTilt>
   );
 };
 
