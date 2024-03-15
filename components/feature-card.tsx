@@ -28,9 +28,9 @@ export const FeatureCardHover = ({ children }: { children: React.ReactNode }) =>
     <ReactParallaxTilt
       tiltMaxAngleX={8}
       tiltMaxAngleY={8}
-      scale={1.02}
+      scale={1.05}
       className={cn(
-        'absolute inset-0 opacity-0 group-hover:opacity-100 hover:scale-105 hover:opacity-100 rounded-md bg-purple transition-all duration-300',
+        'absolute inset-0 opacity-0 group-hover:opacity-100 hover:opacity-100 rounded-md bg-purple transition-all duration-300',
         'flex flex-col justify-end gap-3 px-10 pb-[50px]',
         'selection:bg-white selection:text-purple',
       )}
