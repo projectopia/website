@@ -1,11 +1,11 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
-import { heroImage, productImage } from '@/public/images';
+import { heroImage, productImage } from '@/public';
 
 import { BlobButton } from '@/components/blob-button';
 import { PlayButton } from '@/components/play-button';
-import { Github, Mails, Planet } from '@/components/icons';
+import { Planet } from '@/components/icons';
 
 export default function HeroSection() {
   return (

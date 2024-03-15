@@ -1,4 +1,4 @@
-import { projectopiaLogo } from '@/public/images';
+import { projectopiaLogo } from '@/public';
 import Image from 'next/image';
 import Link from 'next/link';
 
