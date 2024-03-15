@@ -8,7 +8,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <div className="h-full">
+    <div className="min-h-full">
       <ScrollHandler />
       <NavigationBar />
       <main>{children}</main>
