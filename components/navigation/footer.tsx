@@ -1,5 +1,3 @@
-import { Mail } from 'lucide-react';
-import Image from 'next/image';
 import Link from 'next/link';
 
 import { footerSocials } from '@/lib/constants';
@@ -11,7 +9,7 @@ export default function Footer() {
   return (
     <footer className="flex justify-center px-4 pb-10 mt-20">
       <div className="w-300 max-w-full">
-        <div aria-label="line" className="h-[1px] w-full bg-gray/60"></div>
+        <div aria-label="line" className="h-[1px] w-full bg-gray/30"></div>
         <section aria-label="footer-navigation" className="mt-10 flex justify-between items-start">
           <Logo />
           <div className="flex gap-20">
@@ -19,15 +17,15 @@ export default function Footer() {
               <div key={idx}>
                 <h4 className="text-sm font-medium text-gray">{item.label}</h4>
                 <div className="mt-5 space-y-2">
-                  {item.links.map((link, linkIdx) => (
+                  {item.links.map(({ newTab, title, href }, linkIdx) => (
                     <Link
                       rel="noopener noreferrer"
-                      target={link.newTab ? '_blank' : '_self'}
+                      target={newTab ? '_blank' : '_self'}
                       className="block text-sm text-gray leading-6"
                       key={linkIdx}
-                      href={link.href}
+                      href={href}
                     >
-                      {link.title}
+                      {title}
                     </Link>
                   ))}
                 </div>
