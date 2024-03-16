@@ -18,6 +18,7 @@ const config = {
         25: '6.25rem',
         30: '7.5rem',
         55: '13.75rem',
+        95: '23.75rem',
         135: '33.75rem',
         160: '40rem',
         300: '75rem',
@@ -60,6 +61,7 @@ const config = {
         gray: 'hsl(var(--gray-color))',
         'primary-bg': 'hsl(var(--primary-background))',
         'secondary-bg': 'hsl(var(--secondary-background))',
+        'feature-card-bg': 'hsl(var(--feature-card-background))',
       },
       borderRadius: {
         lg: 'var(--radius)',
