@@ -19,7 +19,11 @@ export default function SubscribeSection() {
           <div className="flex w-full gap-4 mt-8">
             <div className="flex-1 relative">
               <Mail className="absolute top-1/2 -translate-y-1/2 left-5 text-purple" />
-              <Input type="email" className="w-full pl-14 pr-4 text-base" placeholder="Your email" />
+              <Input
+                type="email"
+                className="w-full pl-14 pr-4 text-base border border-solid border-gray/40"
+                placeholder="Your email"
+              />
             </div>
             <Button className="bg-purple text-white px-5 py-2 font-medium leading-6 hover:bg-purple/85 text-base">
               Subscribe
