@@ -1,10 +1,15 @@
+'use client';
+
 import Link from 'next/link';
 
 import { cn } from '@/lib/utils';
 import Logo from '@/components/logo';
 import { ChevronRight } from '@/components/icons';
+import { useModal } from '@/hooks/modal-store';
 
 export default function NavigationBar() {
+  const { onOpen } = useModal();
+
   return (
     <nav className="navbar flex justify-center px-4 sticky top-0 transition-all z-40">
       <div className="w-300 max-w-full flex items-center justify-between h-20 transition-all">
@@ -26,6 +31,7 @@ export default function NavigationBar() {
                 'before:absolute before:bg-[#473797] before:left-0 before:bottom-0 before:w-0 before:h-full before:rounded-[14px]',
                 'before:transition-[width] before:duration-300 hover:before:w-full',
               )}
+              onClick={() => onOpen('signIn')}
             >
               <p className="z-10 pr-4 font-semibold transition-[padding] group-hover:px-2 duration-300">Sign In</p>
               <div className="z-10 right-4 group-hover:-right-2 transition-[right] duration-300 absolute">
