@@ -2,6 +2,8 @@
 
 import { useEffect, useState } from 'react';
 
+import { SignInModal } from '@/components/modals/sign-in-modal';
+
 export const ModalProvider = () => {
   const [isMounted, setIsMounted] = useState(false);
 
@@ -11,5 +13,9 @@ export const ModalProvider = () => {
 
   if (!isMounted) return null;
 
-  return <></>;
+  return (
+    <>
+      <SignInModal />
+    </>
+  );
 };
