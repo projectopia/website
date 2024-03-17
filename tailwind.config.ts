@@ -66,6 +66,7 @@ const config = {
         'primary-bg': 'hsl(var(--primary-background))',
         'secondary-bg': 'hsl(var(--secondary-background))',
         'feature-card-bg': 'hsl(var(--feature-card-background))',
+        'generator-form-input': 'hsl(var(--generator-form-input))',
       },
       borderRadius: {
         lg: 'var(--radius)',
