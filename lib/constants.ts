@@ -132,3 +132,30 @@ export const generatorFormFields = [
     ],
   },
 ];
+
+export const contactFormFields = [
+  {
+    name: 'name',
+    type: 'input',
+    label: 'Your Name',
+    placeholder: 'What is your name?',
+  },
+  {
+    name: 'email',
+    type: 'input',
+    label: 'Your Email',
+    placeholder: 'What is your email?',
+  },
+  {
+    name: 'marketingSource',
+    type: 'input',
+    label: 'How did you hear about us?',
+    placeholder: 'This is important to us (optional)',
+  },
+  {
+    name: 'message',
+    type: 'textarea',
+    label: 'Your Message',
+    placeholder: 'Your super duper important note...',
+  },
+];
