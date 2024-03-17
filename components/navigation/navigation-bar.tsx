@@ -19,7 +19,9 @@ export default function NavigationBar() {
             <Link href="/generator">Generator</Link>
           </li>
           <li className="hover:text-purple hover:font-semibold transition-[font-weight] duration-200">
-            <Link href="/docs">Docs</Link>
+            <Link href="https://projectopia.github.io/docs/" rel="noopener noreferrer" target="_blank">
+              Docs
+            </Link>
           </li>
           <li className="hover:text-purple hover:font-semibold transition-[font-weight] duration-200">
             <Link href="/contact">Contact</Link>
