@@ -5,6 +5,7 @@ import ubunchuuImage from './ubunchuu.png';
 import connectPenguinsImage from './connect-penguins.png';
 import subscribeImage from './subscribe.png';
 import contributeImage from './contribute.png';
+import contactPenguinsImage from './contact-penguins.png';
 
 export {
   projectopiaLogo,
@@ -14,4 +15,5 @@ export {
   connectPenguinsImage,
   subscribeImage,
   contributeImage,
+  contactPenguinsImage,
 };
