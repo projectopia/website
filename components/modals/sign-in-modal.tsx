@@ -29,7 +29,7 @@ export const SignInModal = () => {
           <p className="leading-6 text-gray mt-2">
             to continue to <span className="font-semibold">projectopia</span>
           </p>
-          <Button className="py-[6px] w-full h-auto flex justify-center gap-4 bg-white hover:bg-zinc-100 mt-7 rounded-md border border-solid border-gray/40">
+          <Button className="py-[6px] w-full h-auto flex justify-center gap-4 bg-white hover:bg-zinc-200/70 mt-7 rounded-md border border-solid border-gray/40">
             <GithubColor size={32} />
             <p className="text-gray leading-6 text-base font-normal">Sign In With Github</p>
           </Button>
