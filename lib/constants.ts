@@ -76,3 +76,59 @@ export const connectItems = [
     href: 'https://github.com/projectopia',
   },
 ];
+
+export const generatorFormFields = [
+  {
+    name: 'template',
+    type: 'select',
+    label: 'Project Template',
+    placeholder: 'Choose Template for your project',
+    options: [
+      {
+        value: 'docusaurus',
+        title: 'Projectopia Docusaurus Template',
+      },
+      {
+        value: 'mkdocs',
+        title: 'Projectopia MKdocs Template',
+      },
+    ],
+  },
+  {
+    name: 'projectName',
+    type: 'input',
+    label: 'Project Name',
+    placeholder: 'Your Project name',
+    options: [],
+  },
+  {
+    name: 'repositoryName',
+    type: 'input',
+    label: 'Repository Name',
+    placeholder: 'Your Github Repository display name',
+    options: [],
+  },
+  {
+    name: 'tagline',
+    type: 'input',
+    label: 'Project Tagline',
+    placeholder: "Your Project's tagline",
+    options: [],
+  },
+  {
+    name: 'visibility',
+    type: 'select',
+    label: 'Project Visibility',
+    placeholder: '',
+    options: [
+      {
+        value: 'public',
+        title: 'Public',
+      },
+      {
+        value: 'private',
+        title: 'Private',
+      },
+    ],
+  },
+];
