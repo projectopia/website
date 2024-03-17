@@ -1,9 +1,9 @@
 import Link from 'next/link';
 
-import { footerSocials } from '@/lib/constants';
-import Logo from '@/components/logo';
-import footerItems from '@/config/footer-links.json';
 import { cn } from '@/lib/utils';
+import Logo from '@/components/logo';
+import { footerSocials } from '@/lib/constants';
+import footerItems from '@/config/footer-links.json';
 
 export default function Footer() {
   return (

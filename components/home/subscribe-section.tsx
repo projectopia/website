@@ -1,10 +1,11 @@
-import { contributeImage, subscribeImage } from '@/public';
-import Image from 'next/image';
-import { Input } from '../ui/input';
-import { Button } from '../ui/button';
-import { ChevronRight, Mail } from 'lucide-react';
-import { cn } from '@/lib/utils';
 import Link from 'next/link';
+import Image from 'next/image';
+import { ChevronRight, Mail } from 'lucide-react';
+
+import { cn } from '@/lib/utils';
+import { Input } from '@/components/ui/input';
+import { Button } from '@/components/ui/button';
+import { contributeImage, subscribeImage } from '@/public';
 
 export default function SubscribeSection() {
   return (

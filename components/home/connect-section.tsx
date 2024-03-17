@@ -1,9 +1,10 @@
-import { connectItems } from '@/lib/constants';
-import { cn } from '@/lib/utils';
-import { connectPenguinsImage, ubunchuuImage } from '@/public';
-import { ChevronRight } from 'lucide-react';
-import Image from 'next/image';
 import Link from 'next/link';
+import Image from 'next/image';
+import { ChevronRight } from 'lucide-react';
+
+import { cn } from '@/lib/utils';
+import { connectItems } from '@/lib/constants';
+import { connectPenguinsImage, ubunchuuImage } from '@/public';
 
 export default function ConnectSection() {
   return (

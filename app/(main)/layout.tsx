@@ -1,6 +1,5 @@
-import { Footer, NavigationBar } from '@/components/navigation';
 import { ScrollHandler } from '@/components/scroll-handler';
-import next from 'next';
+import { Footer, NavigationBar } from '@/components/navigation';
 
 export default function RootLayout({
   children,

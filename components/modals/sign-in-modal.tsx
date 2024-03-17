@@ -1,11 +1,12 @@
 'use client';
 
-import { useModal } from '@/hooks/modal-store';
-import { Dialog, DialogCloseButton, DialogContent, DialogHeader } from '../ui/dialog';
 import Image from 'next/image';
+
 import { projectopiaLogo } from '@/public';
-import { Button } from '../ui/button';
-import GithubColor from '../icons/github-color';
+import { useModal } from '@/hooks/modal-store';
+import { Button } from '@/components/ui/button';
+import GithubColor from '@/components/icons/github-color';
+import { Dialog, DialogCloseButton, DialogContent, DialogHeader } from '@/components/ui/dialog';
 
 export const SignInModal = () => {
   const { isOpen, onClose, type } = useModal();

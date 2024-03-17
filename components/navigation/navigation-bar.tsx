@@ -4,10 +4,11 @@ import Link from 'next/link';
 
 import { cn } from '@/lib/utils';
 import Logo from '@/components/logo';
-import { ChevronRight } from '@/components/icons';
 import { useModal } from '@/hooks/modal-store';
+import { ChevronRight } from '@/components/icons';
 
 export default function NavigationBar() {
+  // The open modal function from useModal hook
   const { onOpen } = useModal();
 
   return (

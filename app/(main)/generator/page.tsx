@@ -1,5 +1,6 @@
-import { GeneratorForm } from '@/components/generator-form';
 import Link from 'next/link';
+
+import { GeneratorForm } from '@/components/generator-form';
 
 export default function GeneratorPage() {
   return (
