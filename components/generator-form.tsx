@@ -1,19 +1,20 @@
 'use client';
 
-import { PlusCircle } from 'lucide-react';
 import { z } from 'zod';
+import { useForm } from 'react-hook-form';
+import { PlusCircle } from 'lucide-react';
+import { zodResolver } from '@hookform/resolvers/zod';
+
+import { cn } from '@/lib/utils';
+import { generatorFormFields } from '@/lib/constants';
 
 import { Input } from './ui/input';
 import { Button } from './ui/button';
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from './ui/form';
-import { useForm } from 'react-hook-form';
-import { zodResolver } from '@hookform/resolvers/zod';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from './ui/select';
-import { cn } from '@/lib/utils';
-import { generatorFormFields } from '@/lib/constants';
 
 const formSchema = z.object({
-  template: z.string({ required_error: 'Please choose a template' }).min(0, 'Vcl'),
+  template: z.string({ required_error: 'Please choose a template' }),
   projectName: z.string({ required_error: 'Please input a projectname' }),
   repositoryName: z.string({ required_error: 'Please input your repository name' }),
   tagline: z.string({ required_error: 'Please input your project tagline' }),
@@ -21,8 +22,10 @@ const formSchema = z.object({
 });
 
 export const GeneratorForm = () => {
+  // Form management variable from 'react-hook-form'
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
+    // Hardcoded default values specific to generator-form component
     defaultValues: {
       visibility: 'public',
     },
@@ -78,7 +81,9 @@ export const GeneratorForm = () => {
                     {type === 'input' && (
                       <FormControl>
                         <Input
-                          className="px-[18px] py-[14px] h-auto rounded-lg placeholder:text-gray bg-generator-form-input border-none text-base mt-4"
+                          variant="ghost"
+                          sizes="lg"
+                          className="text-base mt-4"
                           placeholder={placeholder}
                           {...field}
                         />
