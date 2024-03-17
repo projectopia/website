@@ -50,6 +50,7 @@ body,
     --primary-background: 220 14% 96%;
     --secondary-background: 210 10% 16%;
     --feature-card-background: 210 9% 22%;
+    --generator-form-input: 0 0% 96%;
   }
 
   .dark {
