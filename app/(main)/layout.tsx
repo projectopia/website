@@ -23,11 +23,23 @@ export default function MainLayout({
   }, [router]);
 
   return (
-    <div className="min-h-full">
-      <ScrollHandler />
-      <NavigationBar />
-      <main>{children}</main>
-      <Footer />
-    </div>
+    <>
+      <div className="min-h-full hidden lg:block">
+        <ScrollHandler />
+        <NavigationBar />
+        <main>{children}</main>
+        <Footer />
+      </div>
+      <div className="min-h-full lg:hidden w-full flex flex-col justify-center items-center">
+        <p>
+          Current{' '}
+          <span className="font-bold">
+            Project<span className="text-purple">opia</span>
+          </span>{' '}
+          version only support desktop
+        </p>
+        <p>Please change your device for the best experience!</p>
+      </div>
+    </>
   );
 }
