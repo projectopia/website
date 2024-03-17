@@ -25,7 +25,7 @@ export default function ConnectSection() {
                   key={idx}
                   href={href}
                   className={cn(
-                    'px-3 py-4 xl:py-5 xl:px-6 flex justify-between items-center',
+                    'px-3 py-4 xl:py-5 xl:px-6 flex justify-between items-center hover:bg-zinc-100/40 transition',
                     idx === 1 && 'border-t border-b border-solid border-gray/20',
                   )}
                 >
