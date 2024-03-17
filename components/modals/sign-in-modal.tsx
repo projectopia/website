@@ -1,7 +1,7 @@
 'use client';
 
 import { useModal } from '@/hooks/modal-store';
-import { Dialog, DialogContent, DialogHeader } from '../ui/dialog';
+import { Dialog, DialogCloseButton, DialogContent, DialogHeader } from '../ui/dialog';
 import Image from 'next/image';
 import { projectopiaLogo } from '@/public';
 import { Button } from '../ui/button';
@@ -15,6 +15,7 @@ export const SignInModal = () => {
   return (
     <Dialog open={isModalOpen} onOpenChange={onClose}>
       <DialogContent className="bg-white text-black p-10 rounded-2xl overflow-hidden gap-0 sm:rounded-2xl">
+        <DialogCloseButton className="top-10 right-10" />
         <DialogHeader>
           <div className="flex items-center gap-2">
             <Image src={projectopiaLogo} alt="projectopiaLogo" width={44} height={44} priority />
