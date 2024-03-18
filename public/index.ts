@@ -6,6 +6,10 @@ import connectPenguinsImage from './connect-penguins.png';
 import subscribeImage from './subscribe.png';
 import contributeImage from './contribute.png';
 import contactPenguinsImage from './contact-penguins.png';
+import gitImage from './git.png';
+import githubColorlessImage from './github-colorless.png';
+import feedbackImage from './feedback.png';
+import signoutImage from './signout.png';
 
 export {
   projectopiaLogo,
@@ -16,4 +20,8 @@ export {
   subscribeImage,
   contributeImage,
   contactPenguinsImage,
+  gitImage,
+  githubColorlessImage,
+  feedbackImage,
+  signoutImage,
 };
