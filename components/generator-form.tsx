@@ -6,32 +6,21 @@ import { PlusCircle } from 'lucide-react';
 import { zodResolver } from '@hookform/resolvers/zod';
 
 import { cn } from '@/lib/utils';
-import { generatorFormFields } from '@/lib/constants';
+import { generatorFormSchema, generatorFormFields, GENERATOR_FORM_DEFAULT_VALUES } from '@/schemas/generator-form';
 
 import { Input } from './ui/input';
 import { Button } from './ui/button';
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from './ui/form';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from './ui/select';
 
-const formSchema = z.object({
-  template: z.string({ required_error: 'Please choose a template' }),
-  projectName: z.string({ required_error: 'Please input a projectname' }),
-  repositoryName: z.string({ required_error: 'Please input your repository name' }),
-  tagline: z.string({ required_error: 'Please input your project tagline' }),
-  visibility: z.string(),
-});
-
 export const GeneratorForm = () => {
   // Form management variable from 'react-hook-form'
-  const form = useForm<z.infer<typeof formSchema>>({
-    resolver: zodResolver(formSchema),
-    // Hardcoded default values specific to generator-form component
-    defaultValues: {
-      visibility: 'public',
-    },
+  const form = useForm<z.infer<typeof generatorFormSchema>>({
+    resolver: zodResolver(generatorFormSchema),
+    defaultValues: GENERATOR_FORM_DEFAULT_VALUES,
   });
 
-  const onSubmit = (data: z.infer<typeof formSchema>) => {
+  const onSubmit = (data: z.infer<typeof generatorFormSchema>) => {
     // TODO: Handle data submission later
     console.log(data);
   };
