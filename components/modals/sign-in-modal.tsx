@@ -9,6 +9,7 @@ import { useModal } from '@/hooks/modal-store';
 import { Button } from '@/components/ui/button';
 import GithubColor from '@/components/icons/github-color';
 import { Dialog, DialogCloseButton, DialogContent, DialogHeader } from '@/components/ui/dialog';
+import { usePathname } from 'next/navigation';
 
 export const SignInModal = () => {
   // States for holding is loading operations, in this scenario the
@@ -20,13 +21,16 @@ export const SignInModal = () => {
 
   const isModalOpen = isOpen && type === 'signIn';
 
+  // Get current pathname, i.e. '/contact', '/dashboard'
+  const pathname = usePathname();
+
   const onSignIn = () => {
     // Start the sign in process
     startTransition(() => {
       // Sign in using github oath app and redirect to the page that
       // the user is currently on
       signIn('github', {
-        callbackUrl: window.location.pathname,
+        callbackUrl: pathname,
       });
     });
   };
