@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 import { cn } from '@/lib/utils';
 import Logo from '@/components/logo';
-import { footerSocials } from '@/lib/constants';
+import { FOOTER_SOCIALS } from '@/lib/constants';
 import footerItems from '@/config/footer-links.json';
 
 export default function Footer() {
@@ -35,7 +35,7 @@ export default function Footer() {
         </section>
         <section aria-label="footer-metadata" className="grid grid-cols-3 mt-25 w-full items-center">
           <div aria-label="footer-socials" className="flex gap-8 footer-socials">
-            {footerSocials.map(({ href, Icon }, idx) => (
+            {FOOTER_SOCIALS.map(({ href, Icon }, idx) => (
               <a key={idx} href={href} className="hover:scale-105 transition-all group">
                 <Icon size={24} className="stroke-gray group-hover:stroke-purple" />
               </a>
