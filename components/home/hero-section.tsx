@@ -3,9 +3,9 @@ import Image from 'next/image';
 
 import { heroImage, productImage } from '@/public';
 
+import { Planet } from '@/components/icons';
 import { BlobButton } from '@/components/blob-button';
 import { PlayButton } from '@/components/play-button';
-import { Planet } from '@/components/icons';
 
 export default function HeroSection() {
   return (

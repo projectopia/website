@@ -1,7 +1,8 @@
 'use client';
 
-import { cn } from '@/lib/utils';
 import ReactParallaxTilt from 'react-parallax-tilt';
+
+import { cn } from '@/lib/utils';
 
 export const FeatureCard = ({ children }: { children: React.ReactNode }) => {
   return <div className="relative w-95 h-72 group max-w-full">{children}</div>;

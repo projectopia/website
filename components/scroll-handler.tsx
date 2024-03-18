@@ -1,7 +1,8 @@
 'use client';
 
-import { debounce } from '@/lib/utils';
 import { useEffect } from 'react';
+
+import { debounce } from '@/lib/utils';
 
 export const ScrollHandler = () => {
   useEffect(() => {

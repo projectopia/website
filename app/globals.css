@@ -126,11 +126,11 @@ body,
 }
 
 @layer components {
-  html:not([data-navbar-scroll='0']) .navbar {
+  html[data-navbar-scroll='1'] .navbar {
     @apply bg-white bg-opacity-95 backdrop-blur drop-shadow;
   }
 
-  html:not([data-navbar-scroll='0']) .navbar > div {
+  html[data-navbar-scroll='1'] .navbar > div {
     @apply h-15;
   }
 

@@ -1,6 +1,6 @@
-import { projectopiaLogo } from '@/public';
-import Image from 'next/image';
 import Link from 'next/link';
+import Image from 'next/image';
+import { projectopiaLogo } from '@/public';
 
 export default function Logo() {
   return (
