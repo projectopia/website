@@ -5,31 +5,24 @@ import { Send } from 'lucide-react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 
-import { contactFormFields } from '@/lib/constants';
+import { contactFormFields, contactFormSchema } from '@/schemas/contact-form';
 
 import { Input } from './ui/input';
 import { Button } from './ui/button';
 import { Textarea } from './ui/textarea';
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from './ui/form';
 
-const formSchema = z.object({
-  name: z.string({ required_error: 'Please tell us your name' }),
-  email: z.string({ required_error: 'Please tell us your email' }),
-  marketingSource: z.string(),
-  message: z.string({ required_error: 'Please express your thoughts or message to us.' }),
-});
-
 export const ContactForm = () => {
   // Form management variable from 'react-hook-form'
-  const form = useForm<z.infer<typeof formSchema>>({
-    resolver: zodResolver(formSchema),
+  const form = useForm<z.infer<typeof contactFormSchema>>({
+    resolver: zodResolver(contactFormSchema),
     // Hardcoded default values specific to generator-form component
     defaultValues: {
       marketingSource: '',
     },
   });
 
-  const onSubmit = (data: z.infer<typeof formSchema>) => {
+  const onSubmit = (data: z.infer<typeof contactFormSchema>) => {
     // TODO: Handle data submission later
     console.log(data);
   };

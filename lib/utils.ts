@@ -1,13 +1,14 @@
 import { type ClassValue, clsx } from 'clsx';
 import { twMerge } from 'tailwind-merge';
+import { db } from './db';
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 /**
- *  The debounce function receives our function as a parameter
+ *  The debounce function receives a callback function as a parameter
  *
- * @param fn: Our function (for example scroll function)
+ * @param fn: Callback function (for example scroll function)
  * @returns a new function that can receive a variable number of arguments
  */
 export const debounce = (fn: (...params: any[]) => void) => {
@@ -19,10 +20,20 @@ export const debounce = (fn: (...params: any[]) => void) => {
     if (frame) {
       cancelAnimationFrame(frame);
     }
-    // Queue our function call for the next frame
+    // Queue callback function call for the next frame
     frame = requestAnimationFrame(() => {
-      // Call our function and pass any params we received
+      // Call callback function and pass any params we received
       fn(...params);
     });
   };
+};
+
+export const getUserById = async (id: string) => {
+  try {
+    const user = await db.user.findUnique({ where: { id } });
+
+    return user;
+  } catch (error) {
+    return null;
+  }
 };

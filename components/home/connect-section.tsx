@@ -3,7 +3,7 @@ import Image from 'next/image';
 import { ChevronRight } from 'lucide-react';
 
 import { cn } from '@/lib/utils';
-import { connectItems } from '@/lib/constants';
+import { CONNECT_ITEMS } from '@/lib/constants';
 import { connectPenguinsImage, ubunchuuImage } from '@/public';
 
 export default function ConnectSection() {
@@ -20,7 +20,7 @@ export default function ConnectSection() {
           </p>
           <div className="flex gap-10 mt-10 justify-between">
             <div className="flex-1 bg-white rounded-2xl overflow-hidden drop-shadow">
-              {connectItems.map(({ Icon, href, title }, idx) => (
+              {CONNECT_ITEMS.map(({ Icon, href, title }, idx) => (
                 <Link
                   key={idx}
                   href={href}

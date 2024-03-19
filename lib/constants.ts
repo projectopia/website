@@ -1,7 +1,7 @@
-import { Facebook, FacebookColor, Github, Linkedin, Mails } from '@/components/icons';
 import GithubColor from '@/components/icons/github-color';
+import { Facebook, FacebookColor, Github, Linkedin, Mails } from '@/components/icons';
 
-export const footerSocials = [
+export const FOOTER_SOCIALS = [
   {
     href: 'https://github.com/projectopia',
     Icon: Github,
@@ -20,7 +20,7 @@ export const footerSocials = [
   },
 ];
 
-export const featureItems = [
+export const FEATURE_ITEMS = [
   {
     Icon: Github,
     title: 'Lorem Ipsum Dolor Sit Amet',
@@ -59,7 +59,7 @@ export const featureItems = [
   },
 ];
 
-export const connectItems = [
+export const CONNECT_ITEMS = [
   {
     title: 'Facebook',
     Icon: FacebookColor,
@@ -77,85 +77,5 @@ export const connectItems = [
   },
 ];
 
-export const generatorFormFields = [
-  {
-    name: 'template',
-    type: 'select',
-    label: 'Project Template',
-    placeholder: 'Choose Template for your project',
-    options: [
-      {
-        value: 'docusaurus',
-        title: 'Projectopia Docusaurus Template',
-      },
-      {
-        value: 'mkdocs',
-        title: 'Projectopia MKdocs Template',
-      },
-    ],
-  },
-  {
-    name: 'projectName',
-    type: 'input',
-    label: 'Project Name',
-    placeholder: 'Your Project name',
-    options: [],
-  },
-  {
-    name: 'repositoryName',
-    type: 'input',
-    label: 'Repository Name',
-    placeholder: 'Your Github Repository display name',
-    options: [],
-  },
-  {
-    name: 'tagline',
-    type: 'input',
-    label: 'Project Tagline',
-    placeholder: "Your Project's tagline",
-    options: [],
-  },
-  {
-    name: 'visibility',
-    type: 'select',
-    label: 'Project Visibility',
-    placeholder: '',
-    options: [
-      {
-        value: 'public',
-        title: 'Public',
-      },
-      {
-        value: 'private',
-        title: 'Private',
-      },
-    ],
-  },
-];
-
-export const contactFormFields = [
-  {
-    name: 'name',
-    type: 'input',
-    label: 'Your Name',
-    placeholder: 'What is your name?',
-  },
-  {
-    name: 'email',
-    type: 'input',
-    label: 'Your Email',
-    placeholder: 'What is your email?',
-  },
-  {
-    name: 'marketingSource',
-    type: 'input',
-    label: 'How did you hear about us?',
-    placeholder: 'This is important to us (optional)',
-  },
-  {
-    name: 'message',
-    type: 'textarea',
-    label: 'Your Message',
-    placeholder: 'Your super duper important note...',
-  },
-];
+export const AVATAR_FALLBACK_IMG =
+  'https://www.aurubis.com/.resources/aurubis-light-module/webresources/assets/img/image-avatar-avatar-fallback.svg';
