@@ -55,7 +55,7 @@ export const UserCard = ({ session }: { session: Session }) => {
           </DropdownMenuItem>
           <DropdownMenuItem className="p-0">
             <Link
-              href={`https://github.com/${session.user.username}`}
+              href={`https://github.com/${session.user.username}?tab=repositories`}
               rel="noopener noreferrer"
               target="_blank"
               className="flex py-2 px-3 rounded-sm gap-3 hover:bg-zinc-200/40 cursor-pointer text-base text-gray leading-6 w-full transition"
