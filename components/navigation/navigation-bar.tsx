@@ -4,8 +4,10 @@ import Link from 'next/link';
 
 import { auth } from '@/auth';
 import Logo from '@/components/logo';
+
 import { UserCard } from './user-card';
 import { SignInBtn } from './sign-in-btn';
+import { GeneratorLink } from './generator-link';
 
 export default async function NavigationBar() {
   const session = await auth();
@@ -16,7 +18,7 @@ export default async function NavigationBar() {
         <Logo />
         <ul className="flex gap-[30px] font-medium text-gray items-center">
           <li className="hover:text-purple hover:font-semibold transition-[font-weight] duration-200">
-            <Link href="/generator">Generator</Link>
+            <GeneratorLink isAuthenticated={!!session} />
           </li>
           <li className="hover:text-purple hover:font-semibold transition-[font-weight] duration-200">
             <Link href="https://projectopia.github.io/docs/" rel="noopener noreferrer" target="_blank">

@@ -1,11 +1,8 @@
-import Link from 'next/link';
 import Image from 'next/image';
 
 import { heroImage, productImage } from '@/public';
-
-import { Planet } from '@/components/icons';
-import { BlobButton } from '@/components/blob-button';
 import { PlayButton } from '@/components/play-button';
+import { GetStartedButton } from './get-started-button';
 
 export default function HeroSection() {
   return (
@@ -21,14 +18,7 @@ export default function HeroSection() {
           </p>
         </div>
         <div className="flex flex-col items-center mt-10">
-          <Link href={'/generator'}>
-            <BlobButton className="px-4 py-3 text-base font-semibold flex gap-2 items-center drop-shadow-md group">
-              Get Started
-              <div className="relative">
-                <Planet className="group-hover:fill-white transition-[fill] duration-700" />
-              </div>
-            </BlobButton>
-          </Link>
+          <GetStartedButton />
         </div>
         <div className="relative mt-24 flex justify-center">
           <div className="absolute left-1/2 -translate-x-1/2 top-1/2 -translate-top-1/2 z-20 rounded-full peer size-[70px]">

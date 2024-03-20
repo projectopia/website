@@ -10,7 +10,7 @@ import * as z from 'zod';
  */
 export const contactFormSchema = z.object({
   name: z.string({ required_error: 'Please tell us your name' }),
-  email: z.string({ required_error: 'Please tell us your email' }),
+  email: z.string({ required_error: 'Please tell us your email' }).email({ message: 'Please input a correct email' }),
   marketingSource: z.string(),
   message: z.string({ required_error: 'Please express your thoughts or message to us.' }),
 });
