@@ -4,10 +4,10 @@ import { cn } from '@/lib/utils';
 
 export interface BlobButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {}
 
-export const BlobButton: React.FC<BlobButtonProps> = ({ className, children }) => {
+export const BlobButton: React.FC<BlobButtonProps> = ({ className, children, ...props }) => {
   return (
     <>
-      <button className={cn(className, 'blob-btn')}>
+      <button className={cn(className, 'blob-btn')} {...props}>
         {children}
         <span className="blob-btn__inner">
           <span className="blob-btn__blobs">
