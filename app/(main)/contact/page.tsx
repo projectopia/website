@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 import { contactPenguinsImage } from '@/public';
 import { ContactForm } from '@/components/contact-form';
-import SubscribeSection from '@/components/home/subscribe-section';
+import SubscribeSection from '@/components/subscribe-section';
 
 export default function Contact() {
   return (
