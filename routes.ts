@@ -6,7 +6,7 @@
 export const publicRoutes: string[] = ['/', '/docs', '/contact'];
 
 /**
- * The prefix for API authentication rotues
+ * The prefix for API authentication routes
  * Routes that start with this prefix are used for API
  * authentication purposes
  * @type {string}
